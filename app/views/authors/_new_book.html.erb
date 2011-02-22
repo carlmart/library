@@ -1,0 +1,14 @@
+<h2> Author New Book Entry </h2>
+<%=  form_for (book) do |f| %>
+    <%= f.error_messages %> 
+    <%= f.hidden_field :author_id %>
+
+    <%= f.label :book_title %><br />
+    <%= f.text_field :book_title %><br />
+
+    <%= f.label :subject %><br />
+    <%= f.text_field :subject %>
+    
+    <%= f.submit "Create" %>
+<% end %>
+    <br />
